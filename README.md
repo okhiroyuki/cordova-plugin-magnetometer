@@ -31,7 +31,7 @@ Gets a single reading from the magenetometer sensor.
   cordova.plugins.magnetometer.getReading(
     function success(reading){
       console.log(JSON.stringify(reading)); 
-      // Output: {x: 23.113, y:-37.110, z:6.1120, magnitude: 42.2623}
+      // Output: {x: 23.113, y:-37.245, z:6.172, magnitude: 44.266}
     }, 
     function error(message){
      console.log(message);
@@ -57,7 +57,7 @@ Gets regular magnetometer readings sent by the internal sensor, will fire succes
   var watchID = cordova.plugins.magnetometer.watchReadings(
     function success(reading){
       console.log(JSON.stringify(reading)); 
-      // Output: {x: 23.113, y:-37.110, z:6.1120, magnitude: 42.2623}
+      // Output: {x: 23.113, y:-37.245, z:6.172, magnitude: 44.266}
     }, 
     function error(message){
      console.log(message);

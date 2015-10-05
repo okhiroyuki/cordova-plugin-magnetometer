@@ -1,53 +1,54 @@
 //
-//  MagnetoMeter.m
-//  MagnetoMeterTest
+//  Magnetometer.m
+//
+//  Obj-C code for the Cordova Magnetometer Plugin
 //
 //  Created by Rameez Raja<mrameezraja@gmail.com> on 8/20/15.
 //
 //
 
 
-#import "MagnetoMeter.h"
+#import "Magnetometer.h"
 
 
-@interface MagnetoMeter ()
+@interface Magnetometer ()
 
     @property (nonatomic, retain) CLLocationManager *locationManager;
 
 @end
 
-@implementation MagnetoMeter
+@implementation Magnetometer
 
 
 + (void)initialize
 {
-    NSLog(@"MagnetoMeter initialize");
+    NSLog(@"Magnetometer initialize");
 }
 
-- (void)getMagnitude:(CDVInvokedUrlCommand*)command
+- (void)getReading:(CDVInvokedUrlCommand*)command
 {
-    NSLog(@"getMagnitude");
-    [self startMagnetoMeter];
+    NSLog(@"getReading");
+    [self startMagnetometer];
     self.callbackId = command.callbackId;
 }
 
-- (void)watchMagnitude:(CDVInvokedUrlCommand*)command
+- (void)watchReadings:(CDVInvokedUrlCommand*)command
 {
-    NSLog(@"watchMagnitude");
-    [self startMagnetoMeter];
+    NSLog(@"watchReadings");
+    [self startMagnetometer];
     self.callbackId = command.callbackId;
 }
 
-- (void)stopWatch:(CDVInvokedUrlCommand *)command
+- (void)stop:(CDVInvokedUrlCommand *)command
 {
-    NSLog(@"stopWatch");
+    NSLog(@"stop");
     [self.locationManager stopUpdatingHeading];
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
-- (void)startMagnetoMeter {
-    NSLog(@"startMagnetoMeter");
+- (void)startMagnetometer {
+    NSLog(@"startMagnetometer");
 	// setup the location manager
 	_locationManager = [[CLLocationManager alloc] init];
 

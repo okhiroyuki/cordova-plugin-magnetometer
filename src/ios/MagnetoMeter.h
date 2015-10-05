@@ -1,6 +1,7 @@
 //
-//  MagnetoMeter.h
-//  MagnetoMeterTest
+//  Magnetometer.h
+//
+//  Obj-C code for the Cordova Magnetometer Plugin
 //
 //  Created by Rameez Raja<mrameezraja@gmail.com> on 8/20/15.
 //
@@ -11,10 +12,10 @@
 #import <Cordova/CDVPlugin.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface MagnetoMeter : CDVPlugin<CLLocationManagerDelegate>
-    - (void)getMagnitude:(CDVInvokedUrlCommand*)command;
-    - (void)watchMagnitude:(CDVInvokedUrlCommand*)command;
-    - (void)stopWatch:(CDVInvokedUrlCommand*)command;
+@interface Magnetometer : CDVPlugin<CLLocationManagerDelegate>
+    - (void)getReading:(CDVInvokedUrlCommand*)command;
+    - (void)watchReadings:(CDVInvokedUrlCommand*)command;
+    - (void)stop:(CDVInvokedUrlCommand*)command;
 
     @property (copy)   NSString* callbackId;
 @end

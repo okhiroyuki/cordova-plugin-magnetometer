@@ -44,11 +44,11 @@ Gets a single reading from the magenetometer sensor.
 </code>
 </pre>
 
-Reading result properties:
-- x 
-- y
-- z
-- magnitude (calculated total - always positive)
+`reading` result properties:
+- `x`
+- `y`
+- `z`
+- `magnitude` (calculated total - always positive)
 
 
 cordova.plugins.magnetometer.watchReadings
@@ -70,11 +70,11 @@ Gets regular magnetometer readings sent by the internal sensor, will fire succes
 </code>
 </pre>
 
-Reading result properties:
-- x
-- y
-- z
-- magnitude (calculated total - always positive)
+`reading` result properties:
+- `x`
+- `y`
+- `z`
+- `magnitude` (calculated total - always positive)
 
 cordova.plugins.magnetometer.stop
 --------------------------------

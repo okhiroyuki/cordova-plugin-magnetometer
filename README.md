@@ -1,9 +1,11 @@
 cordova-plugin-magnetometer
 ====================
 
-A magnetic field detector plugin. 
+A magnetic field detector plugin. It is ideal for science toolkit or metal detector apps. 
+    
+The API can be accessed via single call or by placing a listener that fires a callback function repeatedly. 
 
-It displays the raw x, y, and z magnetometer values and a computed magnitude of the magnetic field.
+It displays the raw `x`, `y`, and `z` magnetometer values as well as a computed `magnitude` of the magnetic field.
 
 - iOS Support by [Rameez Raja](https://github.com/mrameezraja)
 - Android Support by [Steven de Salas](https://github.com/sdesalas)

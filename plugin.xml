@@ -5,7 +5,7 @@
   version="1.0.0">
 
     <name>Cordova Magnetometer Plugin</name>
-    <author>Steven de Salas / Rameez Raja</author>
+    <author>Rameez Raja / Steven de Salas</author>
     <description>Magnetic Interference detector Plugin</description>
     <license>MIT</license>
     

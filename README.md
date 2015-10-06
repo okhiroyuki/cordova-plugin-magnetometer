@@ -1,7 +1,7 @@
 cordova-plugin-magnetometer
 ====================
 
-A magnetic field detector plugin. It is ideal for science toolkit or metal detector apps. 
+A magnetic field detector plugin ideal for science toolkit or metal detector apps. 
     
 The API can be accessed via single call or by placing a listener that fires a callback function repeatedly. 
 

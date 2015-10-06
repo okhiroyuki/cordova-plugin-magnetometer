@@ -7,7 +7,7 @@
     <name>Cordova Magnetometer Plugin</name>
     <author>Rameez Raja / Steven de Salas</author>
     <description>
-This Cordova plugin gives access to X,Y,Z and Total Magnitude readings from the device's internal magentometer. 
+This Cordova plugin gives access to X,Y,Z and total Magnitude readings from the device's internal magentometer. 
 It is ideal for science toolkit or metal detector apps. 
     
 The API can be accessed via single call or by placing a listener that fires a callback function repeatedly. 

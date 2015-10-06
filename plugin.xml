@@ -6,7 +6,7 @@
 
     <name>Cordova Magnetometer Plugin</name>
     <author>Rameez Raja / Steven de Salas</author>
-    <description>Magnetic Interference detector Plugin</description>
+    <description>This Cordova plugin gives access to X,Y,Z and Total Magnitude readings from the device's internal magentometer, either as single call or by placing a listener that fires a callback function repeatedly, for more information see https://github.com/sdesalas/cordova-plugin-magnetometer.</description>
     <license>MIT</license>
     
     <js-module src="www/magnetometer.js" name="main">

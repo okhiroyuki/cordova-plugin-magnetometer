@@ -30,9 +30,7 @@ For more information see https://github.com/sdesalas/cordova-plugin-magnetometer
       <header-file src="src/ios/Magnetometer.h" />
       <source-file src="src/ios/Magnetometer.m" />
 
-      <!--<framework src="CoreLocation.framework" weak="true" />
-      <framework src="MobileCoreServices.framework" weak="true" />
-      <framework src="CoreGraphics.framework" />-->
+      <framework src="CoreLocation.framework" />
     </platform>
 
     <!-- android -->

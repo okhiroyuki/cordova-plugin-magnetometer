@@ -44,7 +44,7 @@ Gets a single reading from the magenetometer sensor.
 </code>
 </pre>
 
-`reading` result properties:
+`reading` object properties:
 - `x`
 - `y`
 - `z`
@@ -70,7 +70,7 @@ Gets regular magnetometer readings sent by the internal sensor, will fire succes
 </code>
 </pre>
 
-`reading` result properties:
+`reading` object properties:
 - `x`
 - `y`
 - `z`

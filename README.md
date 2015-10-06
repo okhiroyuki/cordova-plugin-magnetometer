@@ -1,6 +1,8 @@
 cordova-plugin-magnetometer
 ====================
 
+![Coin Detector](https://raw.githubusercontent.com/sdesalas/cordova-magnetometer-app/master/design/screenshots/CoinDetector.jpg)
+
 A magnetic field detector plugin ideal for science toolkit or metal detector apps. 
     
 The API can be accessed via single call or by placing a listener that fires a callback function repeatedly. 

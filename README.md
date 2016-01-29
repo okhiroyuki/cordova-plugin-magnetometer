@@ -12,7 +12,7 @@ It displays the raw `x`, `y`, and `z` magnetometer values as well as a computed 
 - iOS Support by [Rameez Raja](https://github.com/mrameezraja)
 - Android Support by [Steven de Salas](https://github.com/sdesalas)
 
-See [this page](https://github.com/sdesalas/cordova-magnetometer-app/blob/master/android/magnetometer-harness/assets/www/index.html) for a basic sample cordova app using this plugin. 
+See [this page](https://github.com/sdesalas/cordova-magnetometer-app/blob/master/www/index.html) for a basic sample cordova app using this plugin. 
 
 Installation
 ------------

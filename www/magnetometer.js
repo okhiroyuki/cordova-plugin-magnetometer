@@ -30,12 +30,12 @@ Magnetometer.prototype = {
     if (cordova.platformId === 'android') {
       if (watchID) {
         // Stop a single watch
-        window.clearInterval(watchID);
+        window.clearInterval(timers[watchID]);
         delete timers.watchID;
       } else {
         // Or stop all watches
         for (var id in timers) {
-          window.clearInterval(id);
+          window.clearInterval(timers[id]);
           delete timers.id;
         }
       }

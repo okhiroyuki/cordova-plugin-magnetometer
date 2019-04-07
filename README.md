@@ -12,8 +12,6 @@ It displays the raw `x`, `y`, and `z` magnetometer values as well as a computed 
 - iOS Support by [Rameez Raja](https://github.com/mrameezraja)
 - Android Support by [RedMobile](https://github.com/red-mobile)
 
-See [this page](https://github.com/red-mobile/cordova-magnetometer-app/blob/master/www/index.html) for a basic sample cordova app using this plugin.
-
 For an in-depth article try this article I wrote: [How to Build a Cross-Platform Metal Detector App](http://desalasworks.com/article/how-to-build-a-cross-platform-metal-detector-app-ios-android/)
 
 Installation

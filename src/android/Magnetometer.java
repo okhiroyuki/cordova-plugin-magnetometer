@@ -9,7 +9,7 @@
 *   @see https://github.com/sdesalas/cordova-plugin-magnetometer
 *   @see https://github.com/apache/cordova-plugin-device-orientation
 *   @see http://www.techrepublic.com/article/pro-tip-create-your-own-magnetic-compass-using-androids-internal-sensors/
-*   
+*
 */
 
 package org.apache.cordova.magnetometer;
@@ -244,6 +244,7 @@ public class Magnetometer extends CordovaPlugin implements SensorEventListener  
         obj.put("x", this.x);
         obj.put("y", this.y);
         obj.put("z", this.z);
+        obj.put("timestamp", this.timeStamp);
 
         double x2 = Float.valueOf(this.x * this.x).doubleValue();
         double y2 = Float.valueOf(this.y * this.y).doubleValue();

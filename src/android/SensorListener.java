@@ -204,12 +204,10 @@ public class SensorListener extends CordovaPlugin implements SensorEventListener
 		this.setStatus(SensorListener.RUNNING);
 
 		if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM){
-			this.timestamp = System.currentTimeMillis();
-            if (event.values[0] == 0) {
-                this.distance = SensorListener.NEAR;
-            } else {
-                this.distance = SensorListener.FAR;
-            }			
+            this.timestamp = System.currentTimeMillis();
+            this.x = event.values[0];
+            this.y = event.values[1];
+            this.z = event.values[2];
 			this.win();
 		}
 	}
@@ -262,7 +260,7 @@ public class SensorListener extends CordovaPlugin implements SensorEventListener
             double y2 = Float.valueOf(this.y * this.y).doubleValue();
             double z2 = Float.valueOf(this.z * this.z).doubleValue();
     
-            obj.put("magnitude", Math.sqrt(x2 + y2 + z2));
+            r.put("magnitude", Math.sqrt(x2 + y2 + z2));
         } catch (JSONException e) {
             e.printStackTrace();
         }

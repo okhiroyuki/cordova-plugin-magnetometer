@@ -1,4 +1,4 @@
-package org.apache.cordova.SensorListener;
+package org.apache.cordova.magnetometer;
 
 import java.lang.Math;
 import java.util.List;

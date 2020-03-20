@@ -96,7 +96,7 @@ var magnetometer = {
      * @param {Options} options The options for getting the magneticField data such as timeout. (OPTIONAL)
      * @return String                       The watch id that must be passed to #clearWatch to stop watching.
      */
-    watchmagneticField: function (successCallback, errorCallback, options) {
+    watchMagnetometer: function (successCallback, errorCallback, options) {
 		argscheck.checkArgs('fFO', 'magnetometer.watchMagnetometer', arguments);
 		
         // Default interval (10 sec)

@@ -1,52 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  id="cordova-plugin-magnetometer"
-  version="1.0.1">
-
-    <name>Cordova Magnetometer Plugin</name>
-    <author>Rameez Raja / Steven de Salas</author>
-    <description>
-This Cordova plugin gives access to X,Y,Z and total Magnitude readings from the device's internal magentometer.
-It is ideal for science toolkit or metal detector apps.
-
-The API can be accessed via single call or by placing a listener that fires a callback function repeatedly.
-
-For more information see https://github.com/red-mobile/cordova-plugin-magnetometer.</description>
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="cordova-plugin-magnetometer"
+    version="1.0.1">
+  
+    <name>Magnetometer</name>
+    <description>This plugin provides access to the device's magnetometer sensor.</description>
     <license>MIT</license>
+    <keywords>cordova,magnetometer</keywords>
+    <repo>https://github.com/okhiroyuki/cordova-plugin-magnetometer</repo>
+    <author>Hiroyuki Okada</author>
+    <engines>
+      <engine name="cordova" version=">=7.1.0"/>
+    </engines>
 
-    <js-module src="www/magnetometer.js" name="main">
-        <clobbers target="cordova.plugins.magnetometer" />
+    <js-module src="www/MagneticField.js" name="MagneticField">
+        <clobbers target="MagneticField" />
     </js-module>
 
-   <!-- ios -->
-    <platform name="ios">
-      <config-file target="config.xml" parent="/*">
-          <feature name="Magnetometer">
-              <param name="ios-package" value="Magnetometer"/>
-          </feature>
-      </config-file>
+    <js-module src="www/magnetometer.js" name="magnetometer">
+        <clobbers target="navigator.magnetometer" />
+    </js-module>
 
-      <header-file src="src/ios/Magnetometer.h" />
-      <source-file src="src/ios/Magnetometer.m" />
-
-      <framework src="CoreLocation.framework" />
-    </platform>
-
-    <!-- android -->
+	  <!-- andorid -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-          <feature name="Magnetometer">
-              <param name="android-package" value="org.apache.cordova.magnetometer.Magnetometer"/>
-          </feature>
-      </config-file>
-
-      <config-file target="AndroidManifest.xml" parent="/*">
-          <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <feature name="Proximity">
+                <param name="android-package" value="org.apache.cordova.magnetometer.SensorListener"/>
+            </feature>
         </config-file>
-
-      <source-file src="src/android/Magnetometer.java" target-dir="src/org/apache/cordova/magnetometer" />
-    </platform>
-
+        <source-file src="src/android/SensorListener.java" target-dir="src/org/apache/cordova/magnetometer" />
+	</platform>
 </plugin>

@@ -1,32 +1,38 @@
 {
-  "name": "cordova-plugin-magnetometer",
+  "name": "@red-mobile/cordova-plugin-magnetometer",
   "version": "1.0.1",
-  "description": "Cordova Magnetometer Plugin",
+  "description": "A magnetic field detector plugin. It displays the raw x, y, and z magnetometer values and a computed magnitude of the magnetic field.",
   "cordova": {
-    "id": "cordova-plugin-magnetometer",
+    "id": "@red-mobile/cordova-plugin-magnetometer",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/red-mobile/cordova-plugin-magnetometer"
+    "url": "https://github.com/okhiroyuki/cordova-plugin-magnetometer"
   },
   "keywords": [
     "cordova",
     "magnetometer",
     "ecosystem:cordova",
-    "compass",
-    "device-orientation",
-    "metal-detector",
-    "metal",
-    "detector",
-    "magneto",
-    "meter",
-    "cordova-ios",
-    "cordova-android"
+    "cordova-android",
+    "sensor"
   ],
-  "author": "RedMobile",
-  "license": "MIT"
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src"
+  },
+  "engines": {
+    "cordova": ">=7.1.0"
+  },
+  "author": "Hiroyuki Okada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okhiroyuki/cordova-plugin-magnetometer/issues"
+  },
+  "homepage": "https://github.com/okhiroyuki/cordova-plugin-magnetometer#readme",
+  "devDependencies": {
+    "jshint": "^2.11.0"
+  }
 }

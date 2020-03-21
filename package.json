@@ -1,6 +1,6 @@
 {
   "name": "@red-mobile/cordova-plugin-magnetometer",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A magnetic field detector plugin. It displays the raw x, y, and z magnetometer values and a computed magnitude of the magnetic field.",
   "cordova": {
     "id": "@red-mobile/cordova-plugin-magnetometer",

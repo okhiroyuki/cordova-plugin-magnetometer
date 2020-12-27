@@ -13,8 +13,7 @@ cordova plugin add @red-mobile/cordva-plugin-magnetometer
 ### uninstall
 
 ```
-cordova plugin remove cordva-plugin-magnetometer
-npm unintall @red-mobile/cordva-plugin-magnetometer
+cordova plugin remove @red-mobile/cordva-plugin-magnetometer
 ```
 
 ## Supported Platforms

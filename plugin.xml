@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="cordova-plugin-magnetometer"
-    version="2.0.3">
+    id="@red-mobile/cordova-plugin-magnetometer"
+    version="2.0.4">
   
     <name>Magnetometer</name>
     <description>This plugin provides access to the device's magnetometer sensor.</description>
@@ -10,7 +10,7 @@
     <repo>https://github.com/okhiroyuki/cordova-plugin-magnetometer</repo>
     <author>Hiroyuki Okada</author>
     <engines>
-      <engine name="cordova" version=">=7.1.0"/>
+      <engine name="cordova" version=">=10.0.0"/>
     </engines>
 
     <js-module src="www/MagneticField.js" name="MagneticField">

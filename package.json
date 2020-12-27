@@ -1,6 +1,6 @@
 {
   "name": "@red-mobile/cordova-plugin-magnetometer",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A magnetic field detector plugin. It displays the raw x, y, and z magnetometer values and a computed magnitude of the magnetic field.",
   "cordova": {
     "id": "@red-mobile/cordova-plugin-magnetometer",
@@ -24,7 +24,7 @@
     "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src"
   },
   "engines": {
-    "cordova": ">=7.1.0"
+    "cordova": ">=10.0.0"
   },
   "author": "Hiroyuki Okada",
   "license": "MIT",
@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/okhiroyuki/cordova-plugin-magnetometer#readme",
   "devDependencies": {
-    "jshint": "^2.11.0"
+    "jshint": "^2.12.0"
   }
 }

@@ -17,7 +17,7 @@ var eventTimerId = null;
 function start() {
     exec(function (a) {
         var tempListeners = listeners.slice(0);
-        magneticField = new MagneticField(a.x, a.y, a.z, a.magnitude, a.timestamp);
+        magneticField = new MagneticField(a.x, a.y, a.z, a.accuracy, a.magnitude, a.timestamp);
         for (var i = 0, l = tempListeners.length; i < l; i++) {
             tempListeners[i].win(magneticField);
         }

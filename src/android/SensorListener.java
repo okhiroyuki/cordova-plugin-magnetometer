@@ -162,7 +162,7 @@ public class SensorListener extends CordovaPlugin implements SensorEventListener
      */
 	private void timeout() {
 		if (this.status == SensorListener.STARTING && 
-			this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM) {				
+			this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_LOW) {
 				this.timestamp = System.currentTimeMillis();
 				this.win();
         }
@@ -203,7 +203,7 @@ public class SensorListener extends CordovaPlugin implements SensorEventListener
 
 		this.setStatus(SensorListener.RUNNING);
 
-		if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM){
+		if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_LOW){
             this.timestamp = System.currentTimeMillis();
             this.x = event.values[0];
             this.y = event.values[1];
@@ -254,6 +254,7 @@ public class SensorListener extends CordovaPlugin implements SensorEventListener
             r.put("x", this.x);
             r.put("y", this.y);
             r.put("z", this.z);
+            r.put("accuracy", this.accuracy);
             r.put("timestamp", this.timestamp);
 
             double x2 = Float.valueOf(this.x * this.x).doubleValue();

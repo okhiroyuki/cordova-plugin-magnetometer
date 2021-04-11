@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     id="@red-mobile/cordova-plugin-magnetometer"
-    version="2.0.4">
+    version="2.1.0">
   
     <name>Magnetometer</name>
     <description>This plugin provides access to the device's magnetometer sensor.</description>
